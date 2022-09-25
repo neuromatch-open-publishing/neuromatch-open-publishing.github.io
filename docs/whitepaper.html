@@ -36,8 +36,8 @@
         <a class="nav-item nav-link" href="index.html">Neuromatch Open Publishing</a>
         <a class="nav-item nav-link active" href="#">White Paper <span class="sr-only">(current)</span></a>
         <a class="nav-item nav-link" href="about.html">About</a>
+        <a class="nav-item nav-link" href="contact.html">Contact us</a>
         <a class="nav-item nav-link" href="https://ostp-letter.github.io">Sign the OSTP letter</a>
-        <a class="nav-item nav-link" href="mailto:d.goodman@imperial.ac.uk">Contact us</a>
       </div>
     </div>  
   </nav>
@@ -49,33 +49,145 @@
         <h1 class="pt-5" style="text-align: center">Neuromatch Open Publishing</h1>
         <h2 class="pt-5 pb-5" style="text-align: center">White Paper</h2>
 
-        <p>
-          We propose to build a commonly owned foundational publishing infrastructure. A coalition of research institutions will fund and maintain a decentralized database, mirrored across multiple servers. Access will be fully open and free.
-        </p>
+<h3>Summary</h3>
 
-        <p>
-          Anyone will be free to build new services and models of publishing on top of this foundation. Access to the core data will be free and interoperable, making any content created in one platform available on all others.
-        </p>
 
-        <p>
-          Our vision is of a vibrant ecosystem of community run, non-profit and yes, even for-profit organizations building interoperable services using this infrastructure. These might include tools for writing papers, better and more interactive ways of reading articles, new experiments in peer review and curation.
-        </p>
+<p>
+We need to replace our outdated and undemocratic publishing system with one which is free to read and publish, reliable, archival, flexible and democratically governed. We propose to do so with a two layer system. The foundational layer is a commonly owned, distributed infrastructure that will maintain a freely and openly accessible database built on a flexible graph structure to allow new and arbitrary methods of publishing and scholarly productivity. The services layer will be provided by a number of third parties building on this flexible infrastructure. 
+</p>
+<h3>Neuromatch</h3>
 
-        <img src="layers.svg" class="img-fluid p-3" width="100%">
 
-        <p>
-          The core database will use a labelled graph data format, rich enough to represent traditional peer review and publishing workflows as well as to experiment with new approaches such as post-publication peer review (which just changes the order that nodes and links are added to the graph).
-        </p>
+<p>
+Neuromatch is a grassroots organization that made its name serving the scientific community through democratizing access to science and education. Our expertise is in building and supporting scalable scientific communities using a network of volunteers and technology, utilizing our unique algorithmic content-based matching of scientists and scientific work. We have shown that incredible, mutually supportive and self-sustaining communities can emerge when technology is designed to empower them. We believe this model can be extended to other parts of research life, and that <strong>democratizing research </strong>will make it better for everyone. Not only that, but that the conditions are right to make fundamental changes to the way we work. 
+</p>
+<h3>Why publishing</h3>
 
-        <img src="graph-traditional.svg" class="img-fluid p-3" width="100%">
 
-        <p>
-          We know that new experiments in publishing come and go, so why is this one any different? Our strategy is to build a system that from the start is owned and governed by the community it is meant to serve. A system that is flexible enough to serve very different communities, and encourages innovation. A system that will be useful in the short term, while sowing the seeds of a better future.
-        </p>
+<p>
+Publishing is one of the least innovative and democratic aspects of research. Under the current model of scholarly publishing, knowledge is either hidden away behind the ability to pay (subscription model), or alternatively made available to all but only if the authors pay exorbitant article processing charges (APCs) that only well funded researchers can afford. Not only that, but since publishers compete on prestige rather than price or features, we can expect little to change for the better if we leave it to them.
+</p>
+<p>
+We believe that the time is right for researchers to take control of one of the fundamental parts of research infrastructure - the publishing system - to ensure that it serves their needs (and the needs of the wider public) and can evolve and improve over time.
+</p>
+<h3>Principles</h3>
 
-        <p>
-          Initially, Neuromatch Open Publishing will be used for Neuromatch services, and operate as a community-owned enhanced <b>preprint+</b> server, flexible and responsive to the needs of different groups of researchers. We will work with institutions and third parties, and always with a mission to foster the formation and cohesion of research communities.
-        </p>
+
+<p>
+A publishing system should be:
+</p>
+<ol>
+
+<li><strong>Free to read.</strong> Research is a public good and should be made freely available to all.
+
+<li><strong>Free to publish.</strong> Participation in research should be equally accessible to all.
+
+<li><strong>Reliable.</strong> We need to know that the system will not disappear overnight.
+
+<li><strong>Archival.</strong> Humanity’s knowledge should be preserved and accessible.
+
+<li><strong>Flexible.</strong> We can’t predict what we will need in the future in terms of what we want to publish, how we evaluate it, peer review, etc., so our publishing system should be flexible enough to cater for many different possibilities. Another way of putting this is that scholarly output is data, and that should follow <a href="https://en.wikipedia.org/wiki/FAIR_data">FAIR principles</a>.
+
+<li><strong>Democratic.</strong> The system must serve the needs of the research community, be accountable and transparent.
+</li>
+</ol>
+<h3>Proposal</h3>
+
+
+<h4>Organization</h4>
+
+
+<p>
+We propose to separate publishing into two layers. The foundation is a <strong>commonly owned publishing infrastructure</strong> (<em>democratically governed</em>). A <strong>coalition of research institutions</strong> (university libraries etc.) will fund and maintain a <strong>decentralized database</strong> that is mirrored across multiple servers, ensuring <em>reliability </em>and <em>archivability</em>. Read <strong>access to this database will be fully open and free</strong>, and write access will be made as widely available as possible consistent with maintaining security and certain standards (<em>free to read and publish</em>). This database will hold all the core scholarly content, including articles, reviews, comments, and metadata (see below for more details). On top of this foundation, multiple <strong>independent third parties will build different services and models of publishing</strong>. Access to the core data is free and interoperable, so content made using one service or model will be available in others (<em>flexible</em>).
+</p>
+<p>
+
+<img src="layers.svg" width="80%" alt="drawing">
+
+</p>
+<h4>Data structure</h4>
+
+
+<p>
+The core database will use a graph data format. Nodes on the graph will either correspond to items of content such as articles, reviews or comments, or to users, groups of users or institutions such as journals or universities. In addition to nodes, the graph contains labeled links between nodes indicating relationships, for example “X is-a-review-of Y”, “A is-an-author-of Y”, “J endorses X”.
+</p>
+<p>
+This data structure is rich enough to represent traditional peer review and publishing workflows (see diagram below) as well as to experiment with new approaches such as post-publication peer review (which just changes the order that nodes and links are added to the graph).
+</p>
+<p>
+
+<img src="graph-traditional.svg" width="80%" alt="drawing">
+
+</p>
+<h4>Third party services</h4>
+
+
+<p>
+We cannot enumerate all the possible third party services that will build on such an infrastructure, because the whole point is to allow for unforeseen innovation, however we can give some examples of services that we intend to provide or expect others to provide.
+</p>
+<ul>
+
+<li><strong>For readers</strong> 
+<ul>
+ 
+<li><strong>Content viewers</strong>. Display document in HTML format in different ways. Experiment with dynamically loading related content in side panel.
+ 
+<li><strong>Profile view</strong>. Overview of the activity of a user, group or organization.
+ 
+<li><strong>Recommendations</strong>. Suggest related content, users, etc.
+ 
+<li><strong>Download</strong>. In different formats such as HTML, Word, LaTeX, etc.
+</li> 
+</ul>
+
+<li><strong>For authors</strong> 
+<ul>
+ 
+<li><strong>Content editors</strong>. For example, using a high level format such as Markdown which can easily be converted into different formats. Experiment with productivity features such as content-aware citation manager.
+ 
+<li><strong>Drag and drop file upload</strong>. Another way to add content.
+ 
+<li><strong>Resubmission tool</strong>. Partially or fully automate the procedure of resubmitting content published on the platform to legacy journals to support researchers careers in the short to medium term.
+</li> 
+</ul>
+
+<li><strong>For communities</strong> 
+<ul>
+ 
+<li><strong>Communities</strong>. Find and build communities manually or semi-automatically using matching algorithms.
+ 
+<li><strong>One-click journal or conference management</strong>. Use the system to automatically manage submissions, review, etc. for a journal or conference.
+</li> 
+</ul>
+</li> 
+</ul>
+<h4>Funding model</h4>
+
+
+<p>
+Neuromatch will use grant-based income to fund initial development of the infrastructure and some initial third party service offerings. Sustainable long-term funding will be from coalition organizations paying an annual fee (based on usage, ability to pay, etc.).
+</p>
+<h3>Building support</h3>
+
+
+<p>
+It’s not enough to have a good system, there needs to be a plan to build and grow support for it, especially given the strong career incentives to publish work in the traditional journal system. Our plan includes:
+</p>
+<ul>
+
+<li><strong>Neuromatch. </strong>We will use this system throughout our organization, and thereby build support for it amongst an already enthusiastic and idealistic community.
+
+<li><strong>Preprint+</strong>. Initially this system will serve as an enhanced preprint server with community ownership. We expect authors to resubmit their work to legacy journals in the short to medium term due to career incentives, and we provide tools that help with that. Preprint servers have been highly successful, and our model for growth here is providing a more flexible service that enables an ecosystem of third party tools to maximize the value of using this service rather than others.
+
+<li><strong>Institutional support</strong>. We will work with governments, funders and universities to either mandate or encourage use of this system (e.g. declare it compliant with legal requirements). For example, we could offer to provide “house journals” for funders who want an open access mandate, or offer a unified open access repository to universities.
+
+<li><strong>Third party service support</strong>. By working with third parties, making it easier for them to build innovative services on top of this infrastructure, we will create the conditions in which it is more pleasurable and productive to use this system.
+
+<li><strong>Community support</strong>. By building services expressly designed to foster the formation and cohesion of research communities, we will create long-lasting investment in this alternative approach allowing for communities to have enough confidence in an alternative system to start to abandon legacy publishers.        
+
+</ul>
+
+  <h3>Contact us</h3>
 
         <p>
           We look forward to sharing more with you soon. Please <a href="mailto:d.goodman@imperial.ac.uk">contact us</a> if you would like to get involved. We would particularly love to hear from university libraries and funders interested in creating an open publishing mandate.
